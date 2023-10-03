@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link type="image/png" sizes="16x16" rel="icon" href="./assets/criptografia.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <title>Decodificador de Texto</title>
+
+</head>
+
+<body>
+    <header>
+        <img class="logo-alura" src="./assets/logo.png" alt="Logo da Alura"></img>
+    </header>
+
+    <main>
+        <section class="input">
+            <textarea class="input-texto" placeholder="digite seu texto" autofocus></textarea>
+
+            <img class="sinal-exclamacao" src="./assets/exclamation-icon.png" alt="símbolo de exclamação">
+            <small>Apenas letras minúsculas e sem acento.</small>
+
+            <div class="botoes">
+                <button class="botao-criptografar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="botao-descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="resultado">
+            <textarea class="mensagem"></textarea>
+            <div class="sem-mensagem">
+                <h4>Nenhuma mensagem encontrada</h4>
+                <small>Digite um texto que você deseja criptografar ou descriptografar.</small>
+            </div>
+            <button class="botao-copiar" onclick="btnCopiar()">Copiar</button>
+        </section>
+    </main>
+
+    <footer>
+        <a target="_blank" href="https://github.com/alainecodes">
+            <p>© Desenvolvido por <strong>Alaine Sant'Anna</strong></p>
+        </a>
+        <a target="_blank" href="https://www.flaticon.com/br/icones-gratis/criptografar"
+            title="criptografar ícones"><small>Criptografar ícones criados por Good Ware - Flaticon</small></a>
+    </footer>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
